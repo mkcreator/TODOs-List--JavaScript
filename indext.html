@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container-fluid main">
+          <a class="navbar-brand">TODOs List</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>  
+      <div id="container my-4">
+        <h3 id="text-center">TODOs List</h3>
+        </div> 
+        <div class="main1" >
+        
+            <div class="mb-3">
+              <label  class="form-label">Titel</label>
+              <input id="title" onfocus="this.value=''" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Add an item to the list!</div>
+            </div>
+            <div class="form-floating">
+                <label class="form-label">Description</label>
+                <textarea  id="Description"class="form-control" onfocus="this.value=''"  id="floatingTextarea"></textarea>
+              </div> <br>
+            <button type="submit" id="btn" class="btn btn-primary">Add to List</button>
+            <button type="clear" id="btn" class="btn btn-primary" onclick="clearStorage()">clear List</button>
+            <div>
+                <h3>Your items</h3>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Sno</th>
+                        <th scope="col">item title</th>
+                        <th scope="col">item Description</th>
+                        <th scope="col">Action</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody id="tablebody">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Get some Food</td>
+                        <td>Get some food you wont to eat</td>
+                        <td><button class="btn btn-primary">Delete</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        
+    </div>
+
+    <script src="./Script.js"></script>
+
+     
+</body>
+</html>
